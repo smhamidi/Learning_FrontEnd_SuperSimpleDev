@@ -1,72 +1,76 @@
-<button class="SUBSCRIBE-button">SUBSCRIBE</button>
-<button class="JOIN-button">JOIN US</button>
-<button class="Tweet-button">Tweet</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning HTML Text</title>
+    <style>
+      /* If you start a css attribute with "." it specify the class name */
+      .SUBSCRIBE-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: all 0.1s;
+      }
 
-<style>
-  /* If you start a css attribute with "." it specify the class name */
-  .SUBSCRIBE-button {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 105px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px;
-    transition: all 0.1s;
-    vertical-align: top;
-  }
+      /* Now we write a pseudoclass for SUBSCRIBE-button */
+      .SUBSCRIBE-button:hover {
+        background-color: rgb(191, 127, 106);
+        border-radius: 10px;
+      }
 
-  /* Now we write a pseudoclass for SUBSCRIBE-button */
-  .SUBSCRIBE-button:hover {
-    background-color: rgb(191, 127, 106);
-    border-radius: 10px;
-  }
+      .SUBSCRIBE-button:active {
+        background-color: aquamarine;
+        color: black;
+        border-radius: 18px;
+      }
 
-  .SUBSCRIBE-button:active {
-    background-color: aquamarine;
-    color: black;
-    border-radius: 18px;
-  }
+      .JOIN-button {
+        background-color: transparent;
+        color: rgb(55, 94, 194);
+        border-color: rgb(55, 94, 194);
+        border-width: 1px;
+        border-radius: 3px;
+        padding-block: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        border-style: solid;
+        margin-right: 5px;
+        transition: all 0.1s;
+      }
+      .JOIN-button:hover {
+        background-color: rgb(55, 94, 194);
+        color: white;
+      }
 
-  .JOIN-button {
-    background-color: transparent;
-    color: rgb(55, 94, 194);
-    border-color: rgb(55, 94, 194);
-    border-width: 1px;
-    border-radius: 3px;
-    padding-block: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    cursor: pointer;
-    border-style: solid;
-    margin-right: 5px;
-    transition: all 0.1s;
-    vertical-align: top;
-  }
-  .JOIN-button:hover {
-    background-color: rgb(55, 94, 194);
-    color: white;
-  }
+      .Tweet-button {
+        background-color: rgb(0, 157, 255);
+        border: none;
+        width: 70;
+        height: 30;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.1s;
+      }
 
-  .Tweet-button {
-    background-color: rgb(0, 157, 255);
-    border: none;
-    width: 70;
-    height: 30;
-    border-radius: 15px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.1s;
-    vertical-align: top;
-  }
+      .Tweet-button:hover {
+        box-shadow: 3px 3px 2px rgb(179, 179, 179);
+      }
 
-  .Tweet-button:hover {
-    box-shadow: 3px 3px 2px rgb(179, 179, 179);
-  }
-
-  .Tweet-button:active {
-    box-shadow: 5px 5px 1px rgb(179, 179, 179);
-  }
-</style>
+      .Tweet-button:active {
+        box-shadow: 5px 5px 1px rgb(179, 179, 179);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="SUBSCRIBE-button">SUBSCRIBE</button>
+    <button class="JOIN-button">JOIN US</button>
+    <button class="Tweet-button">Tweet</button>
+  </body>
+</html>
